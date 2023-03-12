@@ -11,4 +11,7 @@
 # https://github.com/LnL7/nix-darwin/blob/master/modules/module-list.nix
 {
   environment.systemPackages = with pkgs; [nixVersions.stable];
+  services.yabai.enable = true;
+  services.skhd.enable = true;
+  
 }
